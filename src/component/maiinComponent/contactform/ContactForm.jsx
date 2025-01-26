@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "../css/contactForm.css";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 const ContactForm = () => {
   const Data = [
     { title: "Instagram", link: "https://instagram.com" },
