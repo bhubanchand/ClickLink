@@ -1,8 +1,8 @@
 {
   "name": "clicklink-company",
+  "homepage": "https://clicklink.company",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/bhubanchand/ClickLink",
   "dependencies": {
     "cra-template": "1.2.0",
     "gsap": "^3.12.5",
@@ -16,11 +16,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
